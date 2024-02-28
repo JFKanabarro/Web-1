@@ -6,23 +6,23 @@ const formPopup = document.querySelector(".form-popup");
 const hidePopupBtn = formPopup.querySelector(".close-btn");
 const signupLoginLink = formPopup.querySelectorAll(".bottom-link a");
 
-// Show mobile menu
+//menu
 hamburgerBtn.addEventListener("click", () => {
   navbarMenu.classList.toggle("show-menu");
 });
 
-// Hide mobile menu
+//mobile menu
 hideMenuBtn.addEventListener("click", () => hamburgerBtn.click());
 
-// Show login popup
+//login
 showPopupBtn.addEventListener("click", () => {
   document.body.classList.toggle("show-popup");
 });
 
-// Hide login popup
+//Hide login
 hidePopupBtn.addEventListener("click", () => showPopupBtn.click());
 
-// Show or hide signup form
+//signup form
 signupLoginLink.forEach((link) => {
   link.addEventListener("click", (e) => {
     e.preventDefault();
